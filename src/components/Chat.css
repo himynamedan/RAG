@@ -1,0 +1,164 @@
+@font-face {
+  font-family: 'Inter-Medium';
+  src: url('./fonts/Inter-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.ellipse {
+    position: absolute;
+    width: 322px;
+    height: 322px;
+    left: 10px;
+    top: 24px;
+    background: #305DFF;
+    filter: blur(200px);
+    animation: fadeIn 3s ease forwards;
+}
+
+.ellipse1 {
+    position: absolute;
+    width: 322px;
+    height: 322px;
+    left: 1300px;
+    top: 600px;
+    background: #C343FF;
+    filter: blur(200px);
+    animation: fadeIn 5s ease forwards;
+}
+
+.mainheading {
+    text-align: center;
+    width: 100%;
+}
+
+.main-heading-text {
+    margin: 0;
+}
+
+.main-heading-smalltext {
+    font-size: 50px;
+    margin: 0;
+    color: white;
+}
+
+.App {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter-Medium', sans-serif;
+}
+
+.chat-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 1000px;
+    font-size: 20px;
+    height: 55vh; /* Adjust the height as needed */
+    padding-bottom: 30px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    background-color: transparent; /* Fully transparent background */
+}
+
+.chat-window {
+    height: calc(100% - 60px); /* Adjust this based on the height of the input area */
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: transparent; /* Ensure the chat window itself has a background */
+}
+
+/* Customize scrollbar for Webkit browsers */
+.chat-window::-webkit-scrollbar {
+    width: 12px;
+}
+
+.chat-window::-webkit-scrollbar-track {
+    background: transparent; /* Transparent track */
+}
+
+.chat-window::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent thumb */
+    border-radius: 6px; /* Rounded corners */
+}
+
+.chat-window::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4); /* Slightly more visible on hover */
+}
+
+/* Customize scrollbar for Firefox */
+.chat-window {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent; /* Thumb color, track color */
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message.user {
+    align-self: flex-end;
+    background: #dadada;
+    color: #000000;
+}
+
+.message.bot {
+    align-self: flex-start;
+    color: #e5e5ea;
+    background: linear-gradient(45deg, #dd3ac2, #56219b);
+}
+
+.message-input {
+    display: flex;
+    padding: 10px;
+    background-color: transparent; /* Keep the input area background */
+}
+
+.message-input input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 40px;
+    margin-right: 10px;
+    background-color: #2a223a;
+}
+
+.message-input button {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #dd3ac2, #56219b);
+}
+
+.message-input button:hover {
+    background-color: #006bbd;
+}
+
+.input-text {
+    color: #b3b3b3;
+}
+
+.logout-button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 50px;  /* Set width to match the icon */
+    height: 50px; /* Set height to match the icon */
+}
+

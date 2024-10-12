@@ -1,0 +1,227 @@
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url('./fonts/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+ 
+ ::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    height: 12px; /* Height of the scrollbar */
+  }
+  
+  /* Customize the scrollbar thumb (the draggable part) */
+  ::-webkit-scrollbar-thumb {
+    background: #444; /* Dark color for the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+  }
+  
+  /* Customize the scrollbar track (the background area) */
+  ::-webkit-scrollbar-track {
+    background: #222; /* Darker color for the scrollbar track */
+    border-radius: 10px; /* Rounded corners for the track */
+  }
+body {
+    scroll-behavior: smooth;
+
+    margin: 0;
+    margin-left: 250px;
+    margin-right: 250px;
+    font-family: 'Poppins-SemiBold', sans-serif;
+}
+
+.ellipse
+{
+    position: absolute;
+    width: 322px;
+    height: 322px;
+    left: 10px;
+    top: 24px;
+    background: #305DFF;
+    filter: blur(200px);
+    animation: fadeIn 3s ease forwards;
+}
+
+.ellipse1{
+    position: absolute;
+    width: 322px;
+    height: 322px;
+    left: 1300px;
+    top: 600px;
+
+    background: #C343FF;
+    filter: blur(200px);
+    animation: fadeIn 5s ease forwards;
+}
+
+.transparent-header {
+    margin-top:20px;
+    position: sticky;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity */
+    border-radius: 1000px;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(10px); /* Optional: Adds a blur effect to the background */
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    gap:100vh;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff; /* Adjust text color for better visibility on the gradient */
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+    font-family: 'Inter-Medium', sans-serif;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff; /* Adjust link color for better visibility on the gradient */
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.main-heading
+{
+    margin-top:250px;
+    margin-bottom: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins-SemiBold', sans-serif;
+
+}
+
+.main-heading-text{
+    font-size: 50px;
+    
+    background: linear-gradient(80.32deg, #F83A3A 10%, #F13DD4 50%, #7000FF 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    animation: fadeIn 3s ease forwards;
+    font-family: 'Poppins-SemiBold', sans-serif;
+}
+
+.main-heading-smalltext{
+    color: white;
+    margin-top:20px;
+    font-size: 30px;
+    animation: fadeIn 5s ease forwards;
+    font-family: 'Poppins-SemiBold', sans-serif;
+}
+
+.box{
+    background-color: #05010D;
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 5);
+
+    padding:80px;
+    color: white;
+    margin-top:20px;
+    font-size: 30px;
+    animation: fadeIn 5s ease forwards;
+
+}
+
+.next-heading-smalltext{
+    font-family: 'Inter-Medium', sans-serif;
+
+    color: rgb(155, 155, 155);
+    margin-top:100px;
+    font-size: 18px;
+    animation: fadeIn 5s ease forwards;
+}
+
+.main-heading2, .main-heading3, .main-heading4, .main-heading5, .main-heading6  {
+    margin-top: 200px;
+    
+}
+
+.custom-card {
+    margin-top: 20px;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .custom-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .card-body {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    color: #343a40;
+  }
+  
+  .card-text {
+    font-size: 14px;
+    color: white;
+  }
+  
+  .card-body2 {
+    padding: 20px;
+    font-family: 'Gilroy-Medium';
+    
+    background: linear-gradient(80.32deg, #F13DD4 50%, #7000FF 90%);
+
+    
+    color: white;
+    border-radius: 5px;
+  }
+
+  .custom-card2:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+  }
+
+  .main-heading5 {
+    margin-bottom: 0px;
+  }
+
+  .box2 {
+    background-color: #05010D;
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 5);
+
+    padding:1px;
+    color: white;
+    margin-top:20px;
+    font-size: 30px;
+    animation: fadeIn 5s ease forwards;
+  }

@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url('./fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  .ellipse {
+      position: absolute;
+      width: 322px;
+      height: 322px;
+      left: 10px;
+      top: 24px;
+      background: #305DFF;
+      filter: blur(200px);
+      animation: fadeIn 3s ease forwards;
+  }
+  
+  .ellipse1 {
+      position: absolute;
+      width: 322px;
+      height: 322px;
+      left: 1300px;
+      top: 600px;
+      background: #C343FF;
+      filter: blur(200px);
+      animation: fadeIn 5s ease forwards;
+  }
+  
+  .main-heading {
+      margin-top: 10px;
+      text-align: center; /* Center-align text */
+      width: 100%; /* Make sure it takes the full width */
+  }
+  
+  .main-heading-text {
+      margin: 0;
+  }
+
+ /* admin.css */
+/* Styling for the hamburger menu */
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px; /* Position on the left side */
+    top: 36px;
+  }
+  
+  .bm-burger-bars {
+    background: white;
+  }
+  
+  .bm-menu {
+    background: linear-gradient(45deg, #305DFF, #C343FF);
+    height: calc(100vh - 72px); /* Adjust height to fit the viewport */
+    top: 72px; /* Adjust top position */
+    right: 0; /* Position the menu to the right */
+    padding: 1em; /* Adjust padding to reduce space */
+    font-size: 1.15em;
+    width: 250px; /* Adjust width */
+    border-radius: 20px; /* Make borders round */
+}
+
+
+
+  
+  
+  .menu-item {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  /* Change color and hover effect for menu items */
+  
+  .bm-item a:hover {
+    color: #42c0fb; /* Change to your preferred hover color */
+  }
+  
+  /* Styling for the menu overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
