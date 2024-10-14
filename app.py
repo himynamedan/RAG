@@ -18,7 +18,7 @@ CORS(app)  # Enable CORS
 driver = None  # This will be initialized with user input
 
 # Configure generative AI model
-genai.configure(api_key="AIzaSyBNlo10cuiPhXSx81mbkPGAht8X3_Rt8HA")
+genai.configure(api_key="") #Put your Google API Key here
 
 # Upload folder for PDFs
 UPLOAD_FOLDER = 'uploads'
@@ -26,15 +26,15 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 
 # Replace with your Gemini API key
-gemini_api_key = "AIzaSyBNlo10cuiPhXSx81mbkPGAht8X3_Rt8HA"
+gemini_api_key = "" #Put your Google API Key here
 
 # Configure Gemini API
 genai.configure(api_key=gemini_api_key)
 
 # Neo4j connection details
-neo4j_uri = "bolt://52.207.180.66:7687"
-neo4j_username = "neo4j"
-neo4j_password = "forts-housing-disgust"
+neo4j_uri = "" #Enter Neo4j Bolt URL here
+neo4j_username = "" #Enter Neo4j username here
+neo4j_password = "" #Enter Neo4j password
 
 # Function to retrieve all data from Neo4j graph
 
@@ -186,15 +186,15 @@ def process():
 
 
 # Replace with your Gemini API key
-gemini_api_key = "AIzaSyCguWo-qMOw515RJXp-a_Nr69vkEDew1Y8"
+gemini_api_key = ""
 
 # Configure Gemini API
 genai.configure(api_key=gemini_api_key)
 
 # Neo4j connection details
-neo4j_uri = "bolt://52.207.180.66:7687"
-neo4j_username = "neo4j"
-neo4j_password = "forts-housing-disgust"
+neo4j_uri = "" #Enter Neo4j Bolt URL here
+neo4j_username = "" #Enter Neo4j username here
+neo4j_password = "" #Enter Neo4j password here
 
 # Function to retrieve all data from Neo4j graph
 

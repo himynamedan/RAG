@@ -19,7 +19,7 @@ CORS(app)  # Enable CORS
 driver = None  # This will be initialized with user input
 
 # Configure generative AI model
-genai.configure(api_key="AIzaSyCNSlcA-Ct-30d5NS-jkJrcYyxZps8QD4M")
+genai.configure(api_key="") #Put your google API key here
 
 # Upload folder for PDFs
 UPLOAD_FOLDER = 'uploads'
@@ -27,15 +27,15 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 
 # Replace with your Gemini API key
-gemini_api_key = "AIzaSyCNSlcA-Ct-30d5NS-jkJrcYyxZps8QD4M"
+gemini_api_key = "" #Put your google API key here
 
 # Configure Gemini API
 genai.configure(api_key=gemini_api_key)
 
 # Neo4j connection details
-neo4j_uri = "bolt://52.207.180.66:7687"
-neo4j_username = "neo4j"
-neo4j_password = "forts-housing-disgust"
+neo4j_uri = "" #Put your Neo4j Bolt URL here
+neo4j_username = "" #Put your Neo4j username here
+neo4j_password = "" #Put your Neo4j Password here
 
 # Function to retrieve all data from Neo4j graph
 
@@ -58,7 +58,7 @@ def read_pdf(file_path):
 
 def get_answer(input_text):
     """Function to generate a Cypher query using a generative AI model."""
-    client = OpenAI(api_key="sk-proj-h2NzUkVdlyJYmsZaPjJ2T3BlbkFJJt9LqxpwocewYpSh56kh")
+    client = OpenAI(api_key="") #Put your google API key here
 
     completion = client.chat.completions.create(
     model="gpt-3.5-turbo",
@@ -180,15 +180,15 @@ def process():
 
 
 # Replace with your Gemini API key
-gemini_api_key = "AIzaSyCguWo-qMOw515RJXp-a_Nr69vkEDew1Y8"
+gemini_api_key = "" #Put your google API key here
 
 # Configure Gemini API
 genai.configure(api_key=gemini_api_key)
 
 # Neo4j connection details
-neo4j_uri = "bolt://52.207.180.66:7687"
-neo4j_username = "neo4j"
-neo4j_password = "forts-housing-disgust"
+neo4j_uri = "" #Put your Neo4j Bolt URL here
+neo4j_username = "" #Put your Neo4j username here
+neo4j_password = "" #Put your Neo4j Password here
 
 # Function to retrieve all data from Neo4j graph
 
@@ -212,7 +212,7 @@ def get_all_data_from_neo4j():
 
 def get_cypher_query_from_gemini(question, neo4j_data):
 
-    client = OpenAI(api_key="sk-proj-h2NzUkVdlyJYmsZaPjJ2T3BlbkFJJt9LqxpwocewYpSh56kh")
+    client = OpenAI(api_key="") #Put your google API key here
 
     completion = client.chat.completions.create(
     model="gpt-3.5-turbo",

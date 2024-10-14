@@ -20,19 +20,19 @@ CORS(app)  # Enable CORS
 driver = None  # This will be initialized with user input
 
 # Configure generative AI model
-genai.configure(api_key="AIzaSyCguWo-qMOw515RJXp-a_Nr69vkEDew1Y8")
+genai.configure(api_key="") #Put your google API key here
 
 # Upload folder for PDFs
 UPLOAD_FOLDER = 'uploads'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
-gemini_api_key = "AIzaSyCguWo-qMOw515RJXp-a_Nr69vkEDew1Y8"
+gemini_api_key = "" #Put your google API key here
 genai.configure(api_key=gemini_api_key)
 
 # Neo4j connection details
-neo4j_uri = "bolt://44.199.209.117:7687"
-neo4j_username = "neo4j"
-neo4j_password = "scopes-armory-front"
+neo4j_uri = "" #Enter your Neo4j Bolt URL here
+neo4j_username = "" #Enter your Neo4j username here
+neo4j_password = "" #Enter your Neo4j password here
 
 # Function to retrieve all data from Neo4j graph
 
@@ -188,15 +188,15 @@ def process():
 
 
 # Replace with your Gemini API key
-gemini_api_key = "AIzaSyCguWo-qMOw515RJXp-a_Nr69vkEDew1Y8"
+gemini_api_key = "" #Put your google API key here
 
 # Configure Gemini API
 genai.configure(api_key=gemini_api_key)
 
 # Neo4j connection details
-neo4j_uri = "bolt://44.199.209.117:7687"
-neo4j_username = "neo4j"
-neo4j_password = "scopes-armory-front"
+neo4j_uri = "" #Enter your Neo4j Bolt URL here
+neo4j_username = "" #Enter your Neo4j username here
+neo4j_password = "" #Enter your Neo4j password here
 
 # Function to retrieve all data from Neo4j graph
 
@@ -222,7 +222,7 @@ def get_cypher_query_from_gemini(question, neo4j_data):
     # Set up YOUR OpenAI API key
 
     client = OpenAI(
-        api_key="sk-proj-h2NzUkVdlyJYmsZaPjJ2T3BlbkFJJt9LqxpwocewYpSh56kh")
+        api_key="") #Put your google API key here
 
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
@@ -425,9 +425,9 @@ def ask_question():
 def clear_knowledge_graph():
     print("Deleted")
 
-    neo4j_uri = "bolt://44.199.209.117:7687"
-    neo4j_username = "neo4j"
-    neo4j_password = "scopes-armory-front"
+    neo4j_uri = "" #Put your Bolt URL Here here
+    neo4j_username = "" #Put your username here
+    neo4j_password = "" #Put your Neo4j password here
     driver = GraphDatabase.driver(
         neo4j_uri, auth=(neo4j_username, neo4j_password))
 
